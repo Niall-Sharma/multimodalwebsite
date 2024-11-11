@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import React from 'react'; 
+
 export default function GameCard( {pageLink, pageName, gameDeveloper, imageLink}:any ) {
     return(
         <div className="group relative drop-shadow-xl break-all hover:scale-105 hover:ease-in-out transition-transform duration-500">
