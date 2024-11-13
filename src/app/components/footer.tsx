@@ -9,8 +9,17 @@ export default function Footer() {
         <>
             <hr className="mt-20" />
             <footer className="relative flex flex-wrap py-3 min-w-full p-20 min-h-[20vh] bg-Theme-Colors-Charcoal">
-                    <ul className="flex flex-col lg:flex-row">
-                    <h1>FOOTER TEXT</h1>
+                    <ul className="flex flex-col text-xl font-bold uppercase">
+                    <Link
+                         href={"/"}
+                         >
+                            <h1>Home</h1>
+                        </Link>
+                        <Link
+                         href={"/worksCited"}
+                         >
+                            <h1>Works Cited</h1>
+                        </Link>
                     </ul>
             </footer>
         </>

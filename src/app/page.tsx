@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from 'react'; 
-import Navbar from "./components/navbar";
 import GameCard from "./components/gamecards"
 import { url } from "inspector";
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-Theme-Colors-Charcoal">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <div>
-          <p className="text-xl">Videogames are complex beasts with many parts which come together to create the finished product. Throughout the many genres of games, some of the most touching and important times for the player is from the story.</p>
         </div>
         <h1 className="text-center mx-auto text-6xl mt-20">Games</h1>
         <div className="gap-10 items-start justify-items-center align-middle flex-1  flex flex-row flex-grow">
@@ -28,9 +26,6 @@ export default function Home() {
           <GameCard pageLink="#" pageName="Celeste" imageLink="https://upload.wikimedia.org/wikipedia/commons/0/0f/Celeste_box_art_full.png" gameDeveloper="Maddy Makes Games" />    
         </div>
         </main>
-        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-
-        </footer>
       </div>
     </div>
   );
