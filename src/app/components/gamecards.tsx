@@ -11,7 +11,7 @@ export default function GameCard( {pageLink, pageName, gameDeveloper, imageLink}
   
     return(
         <m.div ref={ref} 
-            className="group relative drop-shadow-xl break-all hover:scale-105 hover:ease-in-out transition-transform duration-500 w-1/3 flex-col flex-auto h-full"
+            className="group relative drop-shadow-xl break-all hover:scale-105 hover:ease-in-out transition-transform duration-500 w-1/3 flex-col flex-auto h-full text-white"
             style={{
                 transform: isInView ? "none" : "translateX(-200px)",
                 opacity: isInView ? 1 : 0,

@@ -8,7 +8,7 @@ export default function Footer() {
     return(
         <>
             <hr className="mt-20" />
-            <footer className="relative flex flex-wrap py-3 min-w-full p-20 min-h-[20vh] bg-Theme-Colors-Charcoal">
+            <footer className="relative flex flex-wrap py-3 min-w-full p-20 min-h-[20vh] bg-Theme-Colors-Charcoal text-white">
                     <ul className="flex flex-col text-xl font-bold uppercase">
                     <Link
                          href={"/"}
