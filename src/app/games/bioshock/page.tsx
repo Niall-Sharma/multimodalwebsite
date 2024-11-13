@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'; 
-
 import Image from "next/image";
+import { motion as m } from 'framer-motion';
+
 export default function Page( {pageLink, pageName}:any ) {
     return(
         <>
@@ -13,7 +15,7 @@ export default function Page( {pageLink, pageName}:any ) {
                 className="w-full h-full -z-10 fixed"
                 />
             </header>
-            <main className="bg-Theme-Colors-Charcoal min-h-screen py-10">
+            <m.main className="bg-Theme-Colors-Charcoal min-h-screen py-10" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: .5}}>
                 <div className="mt-20 mb-40">
                     <h1 className="text-3xl font-bold mt-20 text-center text-Theme-Colors-ElectricBlue">Trailer</h1>
                     <div className="mx-auto text-center flex justify-center mt-5">
@@ -82,8 +84,8 @@ export default function Page( {pageLink, pageName}:any ) {
                     </div>
                     
                     <div className="text-center">
-                        <section>
-                            <hr className="w-1/2 mx-auto my-40" />
+                    <hr className="w-1/2 mx-auto my-40" />
+                        <m.section initial={{transform: "translateX(-200px)", opacity: 0}} whileInView={{transform:"none", opacity: 1}} transition={{duration: 1}}>
                             <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue">Survive the decrepit city</h1>
                             <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">A once bustling city turned grim, Rapture is home to many mysteries and secrets for the player to discover</p>
                             <Image 
@@ -93,9 +95,9 @@ export default function Page( {pageLink, pageName}:any ) {
                                 src={"https://preview.redd.it/65qjatgwt1771.jpg?width=640&crop=smart&auto=webp&s=da35ad540703aeff673e712595390b073a90c054"}
                                 className="h-1/4 w-[120vh] mx-auto"
                             />  
-                        </section>    
-                        <section>
-                            <hr className="w-1/2 mx-auto my-40" />
+                        </m.section>    
+                        <hr className="w-1/2 mx-auto my-40" />
+                        <m.section initial={{transform: "translateX(200px)", opacity: 0}} whileInView={{transform:"none", opacity: 1}} transition={{duration: 1}}>
                             <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue">Save or Destroy?</h1>
                             <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">There are victims in this city. Will you save them? Or will you use them for your own gain?</p>
                             <Image 
@@ -105,15 +107,15 @@ export default function Page( {pageLink, pageName}:any ) {
                                 src={"https://media.tenor.com/X27J7JSgawUAAAAM/jealous.gif"}
                                 className="h-1/4 w-[40vh] mx-auto"
                             />  
-                        </section>    
+                        </m.section>    
                         <hr className="w-1/2 mx-auto my-40" />
-                        <section>
+                        <m.section initial={{transform: "translateX(-200px)", opacity: 0}} whileInView={{transform:"none", opacity: 1}} transition={{duration: 1}}>
                             <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue">Gain supernatural powers</h1>
                             <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">To survive this city you&apos;re going to need all the help you can get. Consume plasma and harness supernatural powers.</p>
 
-                        </section>          
+                        </m.section>          
                     </div>
-            </main>
+            </m.main>
         </>
     );
 }

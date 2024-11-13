@@ -20,6 +20,7 @@ export default function Footer() {
                          >
                             <h1>Works Cited</h1>
                         </Link>
+                        <p className="font-normal mt-5">Made with -- React, Tailwind, NextJS</p>
                     </ul>
             </footer>
         </>
