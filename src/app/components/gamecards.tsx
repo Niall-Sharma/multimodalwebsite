@@ -16,10 +16,16 @@ export default function GameCard( {pageLink, pageName, gameDeveloper, imageLink}
                 transform: isInView ? "none" : "translateX(-200px)",
                 opacity: isInView ? 1 : 0,
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-              }}            
+              }}    
+      
               >
             <Link href={pageLink} className="">
-                    <Image 
+            <m.div 
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+                <Image 
                     src={imageLink} 
                     alt="game image" 
                     height={1920}
@@ -41,6 +47,8 @@ export default function GameCard( {pageLink, pageName, gameDeveloper, imageLink}
                             </div>
                         </div>
                 </div>  
+            </m.div>
+              
             </Link>
         </m.div>
     );

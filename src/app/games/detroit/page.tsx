@@ -1,10 +1,13 @@
+'use client'
 import React from 'react'; 
 
 import Image from "next/image";
 import Link from "next/link";
+import { motion as m } from 'framer-motion';
+
 export default function Page( {pageLink, pageName}:any ) {
     return(
-        <>
+        <m.div>
             <header className="flex w-full items-center flex-wrap align-middle justify-center font-bold bg-center bg-cover min-h-[90vh] bg-fixed">
                 <Image 
                 width={1920}
@@ -26,7 +29,7 @@ export default function Page( {pageLink, pageName}:any ) {
                         />
                     </div>
                 </div>
-                <section className="mx-auto w-1/4">
+                <m.section className='w-1/2 mx-auto' initial={{opacity: 0}} whileInView={{opacity:1}}>
                     <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue text-center">Praised by fans</h1>
                     <ul className="flex-row flex flex-wrap gap-5 mx-auto text-center mt-10 text-white text-xl justify-center">
                         <li>
@@ -48,7 +51,7 @@ export default function Page( {pageLink, pageName}:any ) {
                             <p> 2018 Game Awards Nominee: Best Narrative</p>
                         </li>
                     </ul> {/* https://www.imdb.com/title/tt5158314/awards/ */}
-                </section>
+                </m.section>
                 <hr className="w-0 mx-auto my-20" /> 
                 <div className="h-1/4 w-1/2 text-center mx-auto">
                     <p className="text-3xl mt-10 text-center mb-10 font-bold">In the end, what&apos;s the difference between a human and an android?</p>
@@ -60,8 +63,8 @@ export default function Page( {pageLink, pageName}:any ) {
                         />
                     </div>
                     <div className="text-center">
-                        <section>
-                            <hr className="w-1/2 mx-auto my-40" />
+                    <hr className="w-1/2 mx-auto my-40" />
+                    <m.section initial={{transform: "translateX(-200px)", opacity: 0}} whileInView={{transform:"none", opacity: 1}} transition={{duration: 1}}>
                             <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue">Choices Matter</h1>
                             <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">The player is faced with many choices throughout the game. Each choice effects each character and the world around them, leading to vastly different endings</p>
                             <Image 
@@ -71,9 +74,9 @@ export default function Page( {pageLink, pageName}:any ) {
                                 src={"https://static1.srcdn.com/wordpress/wp-content/uploads/2020/02/Detroit-Become-Human-Choices.jpg"}
                                 className="h-1/4 w-[150vh] mx-auto"
                             />  
-                        </section>    
-                        <section>
-                            <hr className="w-1/2 mx-auto my-40" />
+                        </m.section>  
+                        <hr className="w-1/2 mx-auto my-40" />  
+                        <m.section initial={{transform: "translateX(200px)", opacity: 0}} whileInView={{transform:"none", opacity: 1}} transition={{duration: 1}}>
                             <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue">Conform or Rebel?</h1>
                             <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">Will you lead a revolution? Will you conform to the world around you? Shape the world as you see fit.</p>
                             <Image 
@@ -83,7 +86,7 @@ export default function Page( {pageLink, pageName}:any ) {
                                 src={"https://miro.medium.com/v2/0*PUXeTeWWL3fmaykv.jpeg"}
                                 className="h-1/4 w-[150vh] mx-auto"
                             />  
-                        </section>   
+                        </m.section>   
                         <section className="w-1/4 mx-auto mt-20">
                             <Link href={"https://www.quanticdream.com/en/detroit-become-human"}>
                                 <p className="bg-Theme-Colors-BetterBlue p-5 mx-auto rounded-lg">
@@ -93,6 +96,6 @@ export default function Page( {pageLink, pageName}:any ) {
                         </section>          
                     </div>
             </main>
-        </>
+        </m.div>
     );
 }
