@@ -110,7 +110,7 @@ export default function Page( {pageLink, pageName}:any ) {
                         <hr className="w-1/2 mx-auto my-40" />
                         <section>
                             <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue">Gain supernatural powers</h1>
-                            <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">To survive this city you're going to need all the help you can get. Consume plasma and harness supernatural powers.</p>
+                            <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">To survive this city you&apos;re going to need all the help you can get. Consume plasma and harness supernatural powers.</p>
 
                         </section>          
                     </div>

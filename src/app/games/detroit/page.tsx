@@ -34,7 +34,7 @@ export default function Page( {pageLink, pageName}:any ) {
                             <p>2019 Italian Game Awards: Best Narrative </p>
                         </li>
                         <li>
-                            <p>2019 Geeks D'Ouro: Best Playstation Videogame</p>
+                            <p>2019 Geeks D&apos;Ouro: Best Playstation Videogame</p>
                         </li>
                         <li>
                             <p> 2019 BAFTA Nominee: Artistic Achievement</p>
@@ -52,7 +52,7 @@ export default function Page( {pageLink, pageName}:any ) {
                 </section>
                 <hr className="w-0 mx-auto my-20" /> 
                 <div className="h-1/4 w-1/2 text-center mx-auto">
-                    <p className="text-3xl mt-10 text-center mb-10 font-bold">In the end, what's the difference between a human and an android?</p>
+                    <p className="text-3xl mt-10 text-center mb-10 font-bold">In the end, what&apos;s the difference between a human and an android?</p>
                         <Image 
                             width={1920}
                             height={1080}
