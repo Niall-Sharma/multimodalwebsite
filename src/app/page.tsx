@@ -1,10 +1,17 @@
+'use client'
 import Image from "next/image";
 import React from 'react'; 
 import GameCard from "./components/gamecards"
 import { url } from "inspector";
+import { motion as m } from "framer-motion";
+
 export default function Home() {
   return (
-    <div>
+    <m.div 
+    initial={{opacity: 0}} 
+    animate={{opacity: 100}}
+    transition={{duration: 0.3,  ease: 'linear'}}
+    >
       <header className="flex w-full items-center flex-wrap align-middle justify-center font-bold bg-center bg-cover min-h-[75vh] bg-fixed">
           <Image 
           width={1920}
@@ -27,6 +34,6 @@ export default function Home() {
         </div>
         </main>
       </div>
-    </div>
+    </m.div>
   );
 }

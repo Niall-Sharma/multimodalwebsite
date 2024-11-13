@@ -1,10 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from 'react'; 
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
+import { motion as m } from "framer-motion";
 export default function GameCard( {pageLink, pageName, gameDeveloper, imageLink}:any ) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+  
     return(
-        <div className="group relative drop-shadow-xl break-all hover:scale-105 hover:ease-in-out transition-transform duration-500 w-1/3 flex-col flex-auto h-full">
+        <m.div ref={ref} 
+            className="group relative drop-shadow-xl break-all hover:scale-105 hover:ease-in-out transition-transform duration-500 w-1/3 flex-col flex-auto h-full"
+            style={{
+                transform: isInView ? "none" : "translateX(-200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+              }}            
+              >
             <Link href={pageLink} className="">
                     <Image 
                     src={imageLink} 
@@ -29,6 +42,6 @@ export default function GameCard( {pageLink, pageName, gameDeveloper, imageLink}
                         </div>
                 </div>  
             </Link>
-        </div>
+        </m.div>
     );
 }
