@@ -15,7 +15,7 @@ export default function Page( {pageLink, pageName}:any ) {
                 className="w-full h-full -z-10 fixed"
                 />
             </header>
-            <m.main className="bg-Theme-Colors-Charcoal min-h-screen py-10" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: 1}}>
+            <m.main className="bg-Theme-Colors-Charcoal min-h-screen py-10" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: .5}}>
                 <div className="mt-20 mb-40">
                     <h1 className="text-3xl font-bold mt-20 text-center text-Theme-Colors-ElectricBlue">Trailer</h1>
                     <div className="mx-auto text-center flex justify-center mt-5">
