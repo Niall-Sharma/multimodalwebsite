@@ -88,7 +88,9 @@ export default function Page( {pageLink, pageName}:any ) {
                             />  
                         </m.section>   
                         <section className="w-1/4 mx-auto mt-20">
-                            <Link href={"https://www.quanticdream.com/en/detroit-become-human"}>
+                            <Link href={"https://www.quanticdream.com/en/detroit-become-human"}
+                            target="_blank"
+                            >
                                 <p className="bg-Theme-Colors-BetterBlue p-5 mx-auto rounded-lg">
                                     Buy Now
                                 </p> 

@@ -11,16 +11,23 @@ export default function Footer() {
             <footer className="relative flex flex-wrap py-3 min-w-full p-20 min-h-[20vh] bg-Theme-Colors-Charcoal text-white">
                     <ul className="flex flex-col text-xl font-bold uppercase">
                     <Link
-                         href={"/"}
-                         >
-                            <h1>Home</h1>
+                         href={"/"}>
+                            <h1 className="underline">Home</h1>
                         </Link>
                         <Link
-                         href={"/worksCited"}
-                         >
-                            <h1>Works Cited</h1>
+                         href={"/worksCited"}>
+                            <h1 className="underline">Works Cited</h1>
                         </Link>
-                        <p className="font-normal mt-5">Made with -- React, Tailwind, NextJS</p>
+                        <hr 
+                        className="my-5"
+                        />
+                        <p className="font-normal no-underline">Made with -- React, Tailwind, NextJS</p>
+                        <Link 
+                        href={"https://github.com/Niall-Sharma/multimodalwebsite"}
+                        target="_blank">
+                            <p className="underline">Source Code Here</p>
+                        </Link>
+
                     </ul>
             </footer>
         </>
