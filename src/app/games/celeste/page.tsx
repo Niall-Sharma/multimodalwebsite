@@ -58,7 +58,7 @@ export default function Page( {pageLink, pageName}:any ) {
                     <hr className="w-1/2 mx-auto my-40" />
                         <m.section initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
                             <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue">Climb the mountain</h1>
-                            <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">It'll require grit and determination for Celeste to climb this mountain. Battle her inner demons and summit the cliff.</p>
+                            <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">It will require grit and determination for Celeste to climb this mountain. Battle her inner demons and summit the cliff.</p>
                             <Image
                                 width={1920}
                                 height={1080}
