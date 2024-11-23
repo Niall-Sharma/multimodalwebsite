@@ -2,6 +2,7 @@
 import React from 'react'; 
 import Image from "next/image";
 import { motion as m } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Page( {pageLink, pageName}:any ) {
     return(
@@ -17,7 +18,6 @@ export default function Page( {pageLink, pageName}:any ) {
             </header>
             <m.main className="bg-Theme-Colors-Charcoal min-h-screen py-10 text-white" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: .5}}>
                 <div className="mt-20 mb-40">
-                    <h1 className="text-3xl font-bold mt-20 text-center text-Theme-Colors-ElectricBlue">Trailer</h1>
                     <div className="mx-auto text-center flex justify-center mt-5">
                         <iframe 
                             src="https://www.youtube.com/embed/gvtZVzQe8GY?si=MBAMYTNd_MpkG6no"
@@ -58,6 +58,12 @@ export default function Page( {pageLink, pageName}:any ) {
                             <p> And nominated for much more...</p>
                         </li>
                     </ul> {/* https://www.imdb.com/title/tt1094581/awards/ */}
+                    <Link 
+                    href={"https://www.imdb.com/title/tt1094581/awards/  "}
+                    className='text-center underline text-white'
+                    >
+                        <p>Information from IMDB</p>
+                    </Link>
                 </section>
                 <hr className="w-1/2 mx-auto my-40" />
                     <div className=" w-full  h-full min-h-screen relative">
@@ -82,38 +88,51 @@ export default function Page( {pageLink, pageName}:any ) {
                                 className=""
                             />
                     </div>
-                    
+                    <div className='w-3/4'>
+                        <p className='mb-4'>Figure 1. BioShock, developed by 2K Boston, 2K Games, 2007. Screenshot. Reddit, https://i.redd.it/46cnws216sub1.png. Accessed 21 Oct. 2024.</p>
+                        <p>Figure 2. BioShock, developed by 2K Boston, 2K Games, 2007. Screenshot. Daily Toreador, https://bloximages.newyork1.vip.townnews.com/dailytoreador.com/content/tncms/assets/v3/editorial/3/99/399d91e8-f986-11e6-b3da-933732682285/58af6eff256e5.image.png. Accessed 21 Oct. 2024.</p>
+                    </div>
                     <div className="text-center">
                     <hr className="w-1/2 mx-auto my-40" />
                         <m.section initial={{transform: "translateX(-200px)", opacity: 0}} whileInView={{transform:"none", opacity: 1}} transition={{duration: 1}}>
                             <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue">Survive the decrepit city</h1>
                             <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">A once bustling city turned grim, Rapture is home to many mysteries and secrets for the player to discover</p>
-                            <Image 
-                                width={1920}
-                                height={1080}
-                                alt="Connor picking between 2 choices"
-                                src={"https://preview.redd.it/65qjatgwt1771.jpg?width=640&crop=smart&auto=webp&s=da35ad540703aeff673e712595390b073a90c054"}
-                                className="h-1/4 w-[120vh] mx-auto"
-                            />  
+                            <div>
+                                <Image 
+                                    width={1920}
+                                    height={1080}
+                                    alt=""
+                                    src={"https://preview.redd.it/65qjatgwt1771.jpg?width=640&crop=smart&auto=webp&s=da35ad540703aeff673e712595390b073a90c054"}
+                                    className="h-1/4 w-[120vh] mx-auto"
+                                />  
+                                <p>Source: BioShock, developed by 2K Boston, 2K Games, 2007. Reddit, https://preview.redd.it/65qjatgwt1771.jpg. Accessed 21 Oct. 2024.                                </p>
+                            </div>
+
                         </m.section>    
                         <hr className="w-1/2 mx-auto my-40" />
                         <m.section initial={{transform: "translateX(200px)", opacity: 0}} whileInView={{transform:"none", opacity: 1}} transition={{duration: 1}}>
                             <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue">Save or Destroy?</h1>
                             <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">There are victims in this city. Will you save them? Or will you use them for your own gain?</p>
-                            <Image 
-                                width={200}
-                                height={139}
-                                alt="Connor picking between 2 choices"
-                                src={"https://media.tenor.com/X27J7JSgawUAAAAM/jealous.gif"}
-                                className="h-1/4 w-[40vh] mx-auto"
-                            />  
+                            <div>
+                                <Image 
+                                    width={200}
+                                    height={139}
+                                    alt="Connor picking between 2 choices"
+                                    src={"https://media.tenor.com/X27J7JSgawUAAAAM/jealous.gif"}
+                                    className="h-1/4 w-[40vh] mx-auto"
+                                />  
+                                <p>Source: BioShock, developed by 2K Boston, 2K Games, 2007. Reddit, https://i.redd.it/46cnws216sub1.png. Accessed 21 Oct. 2024.</p>
+                            </div>
                         </m.section>    
-                        <hr className="w-1/2 mx-auto my-40" />
-                        <m.section initial={{transform: "translateX(-200px)", opacity: 0}} whileInView={{transform:"none", opacity: 1}} transition={{duration: 1}}>
-                            <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue">Gain supernatural powers</h1>
-                            <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">To survive this city you&apos;re going to need all the help you can get. Consume plasma and harness supernatural powers.</p>
-
-                        </m.section>          
+                        <section className="w-1/4 mx-auto mt-20">
+                            <Link href={"https://2k.com/en-US/game/bioshock-the-collection/"}
+                            target="_blank"
+                            >
+                                <p className="p-5 mx-auto    bg-transparent outline-2 outline-Theme-Colors-BetterBlue outline text-xl font-bold text-Theme-Colors-BetterBlue hover:text-white hover:bg-Theme-Colors-BetterBlue duration-200 hover:scale-125 ">
+                                    Buy Now
+                                </p> 
+                            </Link>                   
+                        </section>       
                     </div>
             </m.main>
         </>
