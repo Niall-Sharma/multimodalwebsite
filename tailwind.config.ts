@@ -13,7 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         "Theme-Colors":{
           "Blackish" : "#OB0C10",
-          "Charcoal" : "#1F2833",
+          "Charcoal" : "rgb(34, 34, 34);",
           "Greyish" : "#C5C6C7",
           "ElectricBlue" : "#66FCF1",
           "BetterBlue" : "#45A29E"

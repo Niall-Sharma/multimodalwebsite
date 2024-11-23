@@ -26,11 +26,11 @@ export default function Home() {
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <div>
         </div>
-        <h1 className="text-center mx-auto text-6xl mt-20">Games</h1>
+        <h1 className="text-center mx-auto text-6xl mt-20 font-bold">Games</h1>
         <div className="gap-10 items-start justify-items-center align-middle flex-1  flex flex-row flex-grow">
           <GameCard pageLink="/games/detroit" pageName="Detroit: Become Human" imageLink="https://cdn1.epicgames.com/columbine/offer/DETROIT2-860x1148-a03ac8673f779b286dcccc83dbe75249.jpg" gameDeveloper="Quantic Dream"/>    
           <GameCard pageLink="/games/bioshock" pageName="Bioshock The Collection" imageLink="https://static.wikia.nocookie.net/bioshock/images/0/09/BIOSHOCK_THE_COLLECTION_BOX_ART.jpg/revision/latest?cb=20160701002243" gameDeveloper="Irrational Games (2K)" />    
-          <GameCard pageLink="#" pageName="Celeste" imageLink="https://upload.wikimedia.org/wikipedia/commons/0/0f/Celeste_box_art_full.png" gameDeveloper="Maddy Makes Games" />    
+          <GameCard pageLink="/games/celeste" pageName="Celeste" imageLink="https://upload.wikimedia.org/wikipedia/commons/0/0f/Celeste_box_art_full.png" gameDeveloper="Maddy Makes Games" />    
         </div>
         </main>
       </div>

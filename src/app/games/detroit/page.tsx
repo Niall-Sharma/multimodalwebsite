@@ -17,9 +17,8 @@ export default function Page( {pageLink, pageName}:any ) {
                 className="w-full h-full -z-10 fixed"
                 />
             </header>
-            <m.main className="bg-Theme-Colors-Charcoal min-h-screen py-10 text-white" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: .5}}>
+            <m.main className="bg-Theme-Colors-Charcoal min-h-screen py-10 text-white">
                 <div className="mt-20 mb-40">
-                    <h1 className="text-3xl font-bold mt-20 text-center text-Theme-Colors-ElectricBlue">Trailer</h1>
                     <div className="mx-auto text-center flex justify-center mt-5">
                         <iframe 
                             src="https://www.youtube.com/embed/8a-EObAhYrg?si=pdBfdG5t2rusEoAJ"
@@ -51,47 +50,65 @@ export default function Page( {pageLink, pageName}:any ) {
                             <p> 2018 Game Awards Nominee: Best Narrative</p>
                         </li>
                     </ul> {/* https://www.imdb.com/title/tt5158314/awards/ */}
+                    <Link 
+                    href={" https://www.imdb.com/title/tt5158314/awards/  "}
+                    className='text-center underline text-white'
+                    >
+                        <p>Information from IMDB</p>
+                    </Link>
                 </m.section>
                 <hr className="w-0 mx-auto my-20" /> 
-                <div className="h-1/4 w-1/2 text-center mx-auto">
+                <div className="h-1/2 w-[150vh] text-center mx-auto">
                     <p className="text-3xl mt-10 text-center mb-10 font-bold">In the end, what&apos;s the difference between a human and an android?</p>
-                        <Image 
-                            width={1920}
-                            height={1080}
-                            alt="3 androids phasing"
-                            src={"https://steamuserimages-a.akamaihd.net/ugc/921430377870915819/DAB6165E156CE60182BDE85E44AE716518431210/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"}
-                        />
+                            <Image 
+                                width={1920}
+                                height={1080}
+                                alt="3 androids phasing"
+                                src={"https://steamuserimages-a.akamaihd.net/ugc/921430377870915819/DAB6165E156CE60182BDE85E44AE716518431210/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"}
+
+                            />
+                            <p className='text-left'>Detroit: Become Human, developed by Quantic Dream, Sony Interactive Entertainment, 2018. Steam User Images.</p>
+
+
                     </div>
                     <div className="text-center">
                     <hr className="w-1/2 mx-auto my-40" />
                     <m.section initial={{transform: "translateX(-200px)", opacity: 0}} whileInView={{transform:"none", opacity: 1}} transition={{duration: 1}}>
                             <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue">Choices Matter</h1>
                             <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">The player is faced with many choices throughout the game. Each choice effects each character and the world around them, leading to vastly different endings</p>
-                            <Image 
-                                width={1920}
-                                height={1080}
-                                alt="Connor picking between 2 choices"
-                                src={"https://static1.srcdn.com/wordpress/wp-content/uploads/2020/02/Detroit-Become-Human-Choices.jpg"}
-                                className="h-1/4 w-[150vh] mx-auto"
-                            />  
+                            <div className='mx-auto w-[150vh]'>
+                                <Image 
+                                    width={1920}
+                                    height={1080}
+                                    alt="Connor picking between 2 choices"
+                                    src={"https://static1.srcdn.com/wordpress/wp-content/uploads/2020/02/Detroit-Become-Human-Choices.jpg"}
+                                    className="h-1/4 w-[150vh] mx-auto"
+                                /> 
+                                <p className='text-left'>Detroit: Become Human, developed by Quantic Dream, Sony Interactive Entertainment, 2018. Screen Rant.</p>
+                            </div>
+
                         </m.section>  
                         <hr className="w-1/2 mx-auto my-40" />  
                         <m.section initial={{transform: "translateX(200px)", opacity: 0}} whileInView={{transform:"none", opacity: 1}} transition={{duration: 1}}>
                             <h1 className="font-bold uppercase text-6xl text-Theme-Colors-ElectricBlue">Conform or Rebel?</h1>
                             <p className="mt-5 mb-20 text-xl text-wrap w-1/2 mx-auto">Will you lead a revolution? Will you conform to the world around you? Shape the world as you see fit.</p>
-                            <Image 
+                            <div className='mx-auto w-[150vh]'>
+                                <Image 
                                 width={1920}
                                 height={1080}
                                 alt="Connor picking between 2 choices"
                                 src={"https://miro.medium.com/v2/0*PUXeTeWWL3fmaykv.jpeg"}
                                 className="h-1/4 w-[150vh] mx-auto"
-                            />  
+                                />  
+                                <p className='text-left'>Source: Detroit: Become Human, developed by Quantic Dream, Sony Interactive Entertainment, 2018. Medium.</p>
+                            </div>
+ 
                         </m.section>   
                         <section className="w-1/4 mx-auto mt-20">
                             <Link href={"https://www.quanticdream.com/en/detroit-become-human"}
                             target="_blank"
                             >
-                                <p className="bg-Theme-Colors-BetterBlue p-5 mx-auto rounded-lg">
+                                <p className="p-5 mx-auto    bg-transparent outline-2 outline-Theme-Colors-BetterBlue outline text-xl font-bold text-Theme-Colors-BetterBlue hover:text-white hover:bg-Theme-Colors-BetterBlue duration-200 hover:scale-125 ">
                                     Buy Now
                                 </p> 
                             </Link>                   
