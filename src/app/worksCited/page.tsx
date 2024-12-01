@@ -17,6 +17,32 @@ export default function Home() {
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-Theme-Colors-Charcoal">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <div>
+          <ul>
+            <li>Main Page</li>
+            <li>            
+              <ul>
+                <li>SOURCE</li>
+              </ul>
+            </li>
+            <li>Detroit: Become Human Page</li>
+            <li>            
+              <ul>
+                <li>SOURCE</li>
+              </ul>
+            </li>
+            <li>Bioshock Page</li>
+            <li>            
+              <ul>
+                <li>SOURCE</li>
+              </ul>
+            </li>
+            <li>Celeste Page</li>
+            <li>            
+              <ul>
+                <li>SOURCE</li>
+              </ul>
+            </li>
+          </ul>
         </div>
         </main>
       </div>
