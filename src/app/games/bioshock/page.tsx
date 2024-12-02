@@ -75,6 +75,7 @@ export default function Page( {pageLink, pageName}:any ) {
                             height={1080}
                             alt="Outside view of Rapture"
                             src={"https://i.redd.it/46cnws216sub1.png"}
+                            className='mx-auto'
                         />
                     </div>
                     <div className=" w-full  h-full min-h-screen relative">
@@ -85,8 +86,8 @@ export default function Page( {pageLink, pageName}:any ) {
                                 height={1080}
                                 alt="Inside Rapture"
                                 src={"https://bloximages.newyork1.vip.townnews.com/dailytoreador.com/content/tncms/assets/v3/editorial/3/99/399d91e8-f986-11e6-b3da-933732682285/58af6eff256e5.image.png?resize=1396%2C785"}
-                                className=""
-                            />
+                                className='mx-auto'
+                                />
                     </div>
                     <div className='w-3/4'>
                         <p className='mb-4'>Figure 1. BioShock, developed by 2K Boston, 2K Games, 2007. Screenshot. Reddit, https://i.redd.it/46cnws216sub1.png. Accessed 21 Oct. 2024.</p>
