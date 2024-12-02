@@ -67,7 +67,7 @@ export default function Page( {pageLink, pageName}:any ) {
                                 className='h-1/4 w-[120vh] mx-auto'
                                 />
                              <Link
-                            href={"https://www.celestegame.com"}>
+                                href={"https://www.celestegame.com"}>
                                 <p className='text-center ml-5 mt-5'>Source: Celeste, developed by Maddy Makes Games, 2018. Screenshot. SuperJump Magazine.</p>
                             </Link>
                         </m.section>
